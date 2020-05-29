@@ -145,7 +145,7 @@
 									Erkunden Sie mit Ihrem Smartphone z. B. die Stolpersteine der Stadt bei einem Spaziergang. Funktionen wie die Standortanzeige und Ergebnisanzeige im Umfeld helfen Ihnen dabei. Die für Mobiles angepasste Anzeige erleichtert Ihnen die Bedienung.
 									</section>
 									</section>
-									<section data-menu-title="Kontakt">
+									<section data-menu-title="Kontakt" class="ABCD">
 										<b>Interesse? </b></br>
 										<p>Das GIS-Team des <a href="https://www.krefeld.de/de/vermessung/62-fachbereich-vermessungs-und-katasterwesen/">Fachbereichs Vermessungs- und Katasterwesen</a> berät Sie gerne bezüglich der Darstellungsmöglichkeiten Ihrer Daten innerhalb eines Fachportals.
 										</br></br><b>Kontakt</b></br></br>
@@ -401,6 +401,14 @@ navigationMode: 'default',
 				// Learn about plugins: https://revealjs.com/plugins/
 				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
 			});
+			
+var url = document.location.href;
+
+if (url.match("?Vorbereitung$")) { // ends with
+  $('.ABCD').show();
+} else {
+  $('.ABCD').hide();
+}
 		</script>
 	</body>
 </html>
