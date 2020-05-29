@@ -145,7 +145,7 @@
 									Erkunden Sie mit Ihrem Smartphone z. B. die Stolpersteine der Stadt bei einem Spaziergang. Funktionen wie die Standortanzeige und Ergebnisanzeige im Umfeld helfen Ihnen dabei. Die für Mobiles angepasste Anzeige erleichtert Ihnen die Bedienung.
 									</section>
 									</section>
-									<section id="showSlide" data-menu-title="Kontakt" >
+									<section classes="showSlide" data-menu-title="Kontakt" >
 										<b>Interesse? </b></br>
 										<p>Das GIS-Team des <a href="https://www.krefeld.de/de/vermessung/62-fachbereich-vermessungs-und-katasterwesen/">Fachbereichs Vermessungs- und Katasterwesen</a> berät Sie gerne bezüglich der Darstellungsmöglichkeiten Ihrer Daten innerhalb eines Fachportals.
 										</br></br><b>Kontakt</b></br></br>
@@ -164,19 +164,14 @@
 			
 window.addEventListener('DOMContentLoaded', (event) =>{
 var url = document.location.href;
-var slideShown = document.getElementById("showSlide");
-console.log(slideShown);
-	console.log(url.match(/Vorbereitung/gi));
-	console.log(url);
-	console.log("12");
+var slideShown = document.getElementsByClass("showSlide");
+
 			if (url.match(/Vorbereitung/gi)) { // ends with
-				console.log("1");
-			  slideShown.style.display="block";
-				 slideShown.remove();
-				
+				console.log("Vorbereitung"); 	
 			} else {
-			  slideShown.style.display="none";
-				console.log("2");
+			  for(var index = 0; index < slideShown.length; index++) {
+ 				slideShown[index].remove();
+			}
 			}
 });
 			// More info about initialization & config:
