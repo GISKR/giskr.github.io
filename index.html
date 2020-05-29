@@ -172,6 +172,7 @@ console.log(slideShown);
 			if (url.match(/Vorbereitung/gi)) { // ends with
 				console.log("1");
 			  slideShown.style.display="block";
+				 slideShown.remove();
 				
 			} else {
 			  slideShown.style.display="none";
