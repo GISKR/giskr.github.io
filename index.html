@@ -167,9 +167,10 @@ var url = document.location.href;
 var slideShown = document.getElementsByClassName("ABCD");
 
 	console.log("12");
-			if (url.match("Vorbereitung")) { // ends with
-			  slideShown.style.display="block";
+			if (url.match(/Vorbereitung/gi)) { // ends with
 				console.log("1");
+			  slideShown.style.display="block";
+				
 			} else {
 			  slideShown.style.display="none";
 				console.log("2");
