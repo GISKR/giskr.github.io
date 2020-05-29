@@ -164,7 +164,7 @@
 			var url = document.location.href;
 			var slideShown = document.getElementsByClassName("ABCD");
 
-if (document.readyState == "complete") {
+window.addEventListener('DOMContentLoaded', (event) =>{
 	console.log("12");
 			if (url.match("Vorbereitung")) { // ends with
 			  slideShown.style.display="block";
@@ -173,7 +173,7 @@ if (document.readyState == "complete") {
 			  slideShown.style.display="none";
 				console.log("2");
 			}
-}
+});
 			// More info about initialization & config:
 			// - https://revealjs.com/initialization/
 			// - https://revealjs.com/config/
