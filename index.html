@@ -145,13 +145,28 @@
 									Erkunden Sie mit Ihrem Smartphone z. B. die Stolpersteine der Stadt bei einem Spaziergang. Funktionen wie die Standortanzeige und Ergebnisanzeige im Umfeld helfen Ihnen dabei. Die für Mobiles angepasste Anzeige erleichtert Ihnen die Bedienung.
 									</section>
 									</section>
-									<section class="showSlide" data-menu-title="Kontakt" >
+									<section data-menu-title="Kontakt" >
 										<b>Interesse? </b></br>
 										<p>Das GIS-Team des <a href="https://www.krefeld.de/de/vermessung/62-fachbereich-vermessungs-und-katasterwesen/">Fachbereichs Vermessungs- und Katasterwesen</a> berät Sie gerne bezüglich der Darstellungsmöglichkeiten Ihrer Daten innerhalb eines Fachportals.
 										</br></br><b>Kontakt</b></br></br>
 											E-Mail: <a href="mailto:gis@krefeld.de">gis@krefeld.de</a></br>
 											Tel.: +49-(0)2151-3660-3869 
 										</p>
+									</section>
+									<section class="Vorbereitung">
+									<section class="Vorbereitung" data-menu-title="Vorbereitung" >
+										<b>Vorbereitung</b></br>
+										<p>Sie haben Interesse und möchten wissen welche Informationen für eine Portalerstellung relevant sind?
+										</p>
+										 <div class='footer_right'>Klicken Sie für weitere Punkte den Pfeil nach unten</div>
+
+									</section>
+									<section class="Vorbereitung" data-menu-title="Vorbereitung">
+										<b>Vorbereitung</b></br>
+										<p>Sie haben Interesse und möchten wissen welche Informationen für eine Portalerstellung relevant sind?
+										</p>
+										 <div class='footer_right'>Klicken Sie für weitere Punkte den Pfeil nach unten</div>
+									</section>
 									</section>
 			</div>
 		</div>
@@ -164,14 +179,19 @@
 			
 window.addEventListener('DOMContentLoaded', (event) =>{
 var url = document.location.href;
-var slideShown = document.getElementsByClassName("showSlide");
+var slideVorb = document.getElementsByClassName("Vorbereitung");
+var slideFK = document.getElementsByClassName("Familienkompass");
 console.log (slideShown);
-			if (url.match(/Vorbereitung/gi)) { // ends with
-				console.log("Vorbereitung"); 	
-			} else {
-				console.log ("123");
-			  for(var index = 0; index < slideShown.length; index++) {
- 				slideShown[index].remove();
+			if (!url.match(/Vorbereitung/gi)) { // ends with
+				console.log("!Vorbereitung"); 	
+			  for(var index = 0; index < slideVorb.length; index++) {
+ 				slideVorb[index].remove();
+			}
+			}
+			if (!url.match(/Familienkompass/gi)) { // ends with
+				console.log("!FK"); 	
+			  for(var index = 0; index < slideFK.length; index++) {
+ 				slideFK[index].remove();
 			}
 			}
 });
