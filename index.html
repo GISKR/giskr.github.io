@@ -405,7 +405,7 @@ navigationMode: 'default',
 			var url = document.location.href;
 			var slideShown = document.getElementsByClassName("ABCD");
 
-if (document.readyState === "interactive") {
+if (document.readyState == "interactive") {
 			if (url.match("Vorbereitung")) { // ends with
 			  slideShown.style.display="block";
 				console.log("1");
