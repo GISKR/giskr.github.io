@@ -403,11 +403,12 @@ navigationMode: 'default',
 			});
 			
 var url = document.location.href;
+var slideShown = document.getElementsByClassName("ABCD");
 
 if (url.match("Vorbereitung")) { // ends with
-  $('.ABCD').show();
+  slideShown.show();
 } else {
-  $('.ABCD').hide();
+  slideShown.hide();
 }
 		</script>
 	</body>
