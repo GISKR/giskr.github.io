@@ -186,12 +186,14 @@ var slideFK = document.getElementsByClassName("Familienkompass");
 				console.log("!Vorbereitung"); 	
 			  for(var index = 0; index < slideVorb.length; index++) {
  				slideVorb[index].remove();
+				 Reveal.sync()
 			}
 			}
 			if (!url.match(/Familienkompass/gi)) { // ends with
 				console.log("!FK"); 	
 			  for(var index = 0; index < slideFK.length; index++) {
  				slideFK[index].remove();
+				Reveal.sync()
 			}
 			}
 });
