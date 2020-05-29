@@ -161,6 +161,19 @@
 		<script src="plugin/markdown/markdown.js"></script>
 		<script src="plugin/highlight/highlight.js"></script>
 		<script>
+			var url = document.location.href;
+			var slideShown = document.getElementsByClassName("ABCD");
+
+if (document.readyState == "complete") {
+	console.log("12");
+			if (url.match("Vorbereitung")) { // ends with
+			  slideShown.style.display="block";
+				console.log("1");
+			} else {
+			  slideShown.style.display="none";
+				console.log("2");
+			}
+}
 			// More info about initialization & config:
 			// - https://revealjs.com/initialization/
 			// - https://revealjs.com/config/
@@ -402,18 +415,7 @@ navigationMode: 'default',
 				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
 });
 			
-			var url = document.location.href;
-			var slideShown = document.getElementsByClassName("ABCD");
 
-if (document.readyState == "complete") {
-			if (url.match("Vorbereitung")) { // ends with
-			  slideShown.style.display="block";
-				console.log("1");
-			} else {
-			  slideShown.style.display="none";
-				console.log("2");
-			}
-}
 		</script>
 	</body>
 </html>
