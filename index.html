@@ -405,10 +405,10 @@ navigationMode: 'default',
 var url = document.location.href;
 var slideShown = document.getElementsByClassName("ABCD");
 
-if (url.match("Vorbereitung")) { // ends with
-  slideShown.show();
+if (url.match("?Vorbereitung")) { // ends with
+  slideShown.style.display="block";
 } else {
-  slideShown.hide();
+  slideShown.style.display="none";
 }
 		</script>
 	</body>
