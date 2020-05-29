@@ -186,17 +186,17 @@ var slideFK = document.getElementsByClassName("Familienkompass");
 				console.log("!Vorbereitung"); 	
 			  for(var index = 0; index < slideVorb.length; index++) {
  				slideVorb[index].remove();
-				 Reveal.sync()
+				
 			}
 			}
 			if (!url.match(/Familienkompass/gi)) { // ends with
 				console.log("!FK"); 	
 			  for(var index = 0; index < slideFK.length; index++) {
  				slideFK[index].remove();
-				Reveal.sync()
+				
 			}
 			}
-});
+
 			// More info about initialization & config:
 			// - https://revealjs.com/initialization/
 			// - https://revealjs.com/config/
@@ -437,7 +437,7 @@ navigationMode: 'default',
 				// Learn about plugins: https://revealjs.com/plugins/
 				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
 });
-			
+});			
 
 		</script>
 	</body>
