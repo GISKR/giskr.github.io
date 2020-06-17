@@ -1,0 +1,10 @@
+{
+"type": "FeatureCollection",
+"name": "FKExport",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
+"features": [
+{ "type": "Feature", "properties": { "Content_1": "Bearbeitet mich kollaborativ und stellt das Ergebnis hier dar", "Bezeichnung": "Hallo ich bin irgendwo im Internet gespeichert", "SStrasse": "Straße 93", "SPLZ": "47829", "SOrt": "Krefeld", "MailInternet": "", "Homepage": "", "Kurztext": "", "MailNotes": "", "ID": 9, "Style": "Bildung & Beruf","Kategorie1_All": ["Bildung & Beruf"], "Kategorie2_All": ["Jugendliche 13-17 Jahre","Jugendliche 17-21 Jahre"], "Kategorie3_All": ["Arbeit und Beruf","Ausbildung","Bildung und Weiterbildung","Schulen"] }, "geometry": { "type": "Point", "coordinates": [ 6.63520504652807, 51.350098717493609 ] } },
+{ "type": "Feature", "properties": { "Content_1": "Bearbeitet mich kollaborativ und stellt das Ergebnis hier dar", "Bezeichnung": "Hallo ich bin irgendwo im Internet gespeichert", "SStrasse": "Straße 93", "SPLZ": "47829", "SOrt": "Krefeld", "MailInternet": "", "Homepage": "", "Kurztext": "", "MailNotes": "", "ID": 9, "Style": "Bildung & Beruf","Kategorie1_All": ["Bildung & Beruf"], "Kategorie2_All": ["Jugendliche 13-17 Jahre","Jugendliche 17-21 Jahre"], "Kategorie3_All": ["Arbeit und Beruf","Ausbildung","Bildung und Weiterbildung","Schulen"] }, "geometry": { "type": "Point", "coordinates": [ 6.63520504652807, 51.350098717493609 ] } },
+{ "type": "Feature", "properties": { "Content_1": "Hallo ich bin irgendwo im Internet gespeichert", "Bezeichnung": "Bearbeitet mich kollaborativ und stellt das Ergebnis hier dar", "SStrasse": "BraucheKeine Objektklasse 91", "SPLZ": "47800", "SOrt": "Krefeld", "MailInternet": "@krefeld.de<br><br>@krefeld.de", "Homepage": "", "Kurztext": "", "MailNotes": "", "ID": 279, "Style": "Freizeit & Kultur & Sport","Kategorie1_All": ["Freizeit & Kultur & Sport"], "Kategorie2_All": ["Kinder 3-6 Jahre","Kinder 6-13 Jahre"], "Kategorie3_All": ["Kindergeburtstage","Kreatives Gestalten","Kultur","Museen"] }, "geometry": { "type": "Point", "coordinates": [ 6.58189481216805, 51.346948607393117 ] } }
+]
+}
